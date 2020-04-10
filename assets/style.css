@@ -39,6 +39,7 @@ body {
 .input-search {
     width: 300px;
     background-image: url(../assets/img/search.svg);
+    margin-left: auto;
 }
 
 .buttons{
@@ -63,6 +64,10 @@ body {
     background: #1890FF;
     border: 1px solid #1890FF;
     color: #fff;
+    margin-right: 10px;
+}
+
+.button-card-text {
     margin-right: 10px;
 }
 
@@ -98,7 +103,6 @@ body {
 .section-heading {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 44px;
 }
 
@@ -109,6 +113,7 @@ body {
     line-height: 42px;
     color: #000000;
     margin: 0;
+    margin-right: 30px;
 }
 
 .cards {
@@ -125,10 +130,11 @@ body {
     overflow: hidden;
     margin-bottom: 30px;
     flex-basis: 31%;
+    text-decoration: none;
 }
 
 .card-image {
-    width: 384;
+    width: 384px;
     height: 250px;
     object-fit: cover;
 }
@@ -151,6 +157,10 @@ body {
     line-height: 32px;
 }
 
+.card-title-reg {
+    font-weight: 400;
+}
+
 .card-tag {
     font-style: normal;
     font-weight: normal;
@@ -168,6 +178,19 @@ body {
     flex-wrap: wrap;
 }
 
+.card-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.card-price-bold {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    margin-left: 30px;
+}
+
 .rating {
     margin-right: 26px;
     color: #ffc107;
@@ -183,6 +206,12 @@ body {
 
 .price {
     margin-right: 10px;
+}
+
+.ingredients {
+    color: #8c8c8c;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .category {
@@ -299,7 +328,7 @@ body {
         flex-wrap: wrap;
     }
 
-    .rating{
+    .card .rating{
         flex-basis: 100%;
     }
 
